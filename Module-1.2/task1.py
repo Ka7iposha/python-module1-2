@@ -17,6 +17,7 @@ transfer = '\n'
 ask = 'Бабушка, бабушка, купим {animal}!'
 
 
+# функция генерирующая 1 часть куплетов песни
 def question(animal_a, times):
     result = ''
     line = ask.format(animal=animals[animal_a][second])
@@ -25,15 +26,18 @@ def question(animal_a, times):
     return result
 
 
+# функция содержащая длинну списка
 def ending(length):
     return length == len(animals) - 1
 
 
+# функция, меняющая строчные буквы на заглавные в начале строки
 def capital_letters(word, phrase):
     return phrase if phrase.find(word) \
         else phrase.replace(word, word.title())
 
 
+# функция, генерирующая вторую часть куплета
 def after_question(number_animal):
     result = ''
     for i in reversed(range(0, number_animal + 1)):
@@ -47,6 +51,7 @@ def after_question(number_animal):
     return result
 
 
+# функция генерирующая весь текст
 def song_result():
     result = ''
 
