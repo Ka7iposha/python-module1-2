@@ -41,9 +41,9 @@ def capital_letters(word, phrase):
 def after_question(number_animal):
     result = ''
     for i in reversed(range(0, number_animal + 1)):
-        phrase_animals = animals[i][third].format(animal=animals[i][first])
-        phrase_animals = capital_letters(animals[i][first], phrase_animals)
-        result += phrase_animals
+        sound_animals = animals[i][third].format(animal=animals[i][first])
+        sound_animals = capital_letters(animals[i][first], sound_animals)
+        result += sound_animals
         if ending(i):
             result += '!'
             break
