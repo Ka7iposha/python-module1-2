@@ -16,9 +16,3 @@ def center(string, width, underline):
     return underline * left_border + string + underline * right_border
 
 
-n = 'hello'
-fill = '==>'
-b = 8
-
-print(ljust(n, b, fill))
-

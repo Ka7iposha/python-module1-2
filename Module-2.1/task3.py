@@ -6,5 +6,3 @@ def join(separator, sequence_of_strings):
     k = k[:-1]
     return k
 
-
-print(join('+', ['alfa', 'beta']))

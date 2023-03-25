@@ -12,4 +12,3 @@ def print_to_string(*items, sep=' ', end='\n'):
     return a + end
 
 
-print(print_to_string('100', 'раз', 'отмерь', end='!'))
