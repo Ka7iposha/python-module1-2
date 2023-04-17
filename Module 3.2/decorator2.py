@@ -15,7 +15,7 @@ def timeit(func):
 
 @timeit
 def process_data(a, b):
-    return a + b
+    time.sleep(3)
 
 
 process_data(1, 3)
