@@ -5,6 +5,5 @@ def fibo(n):
         a, b = b, a + b
 
 
-for i in fibo(20):
-    print(i)
+print(list(fibo(20)))
 
