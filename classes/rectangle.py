@@ -18,7 +18,10 @@ class Rectangle():
 
     @width.setter
     def width(self, value):
+        if value <= 0:
+            raise ValueError("ширина должна быть больше 0")
         self._width = value
+
 
     @property
     def height(self):
@@ -26,11 +29,13 @@ class Rectangle():
 
     @height.setter
     def height(self, value):
+        if value <= 0:
+            raise ValueError("высота должна быть больше 0")
         self._height = value
 
 
 r = Rectangle(3, 4)
-print(r.height)
+print(r.width)
 
-r.height = 5
-print(r.height)
+r.width = -1
+print(r.width)
